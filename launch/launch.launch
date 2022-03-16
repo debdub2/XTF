@@ -1,0 +1,12 @@
+<!-- Starts up everything needed to run the example listener/talker Python nodes. -->
+<launch>
+  
+
+  <!-- The talker node will publish a custom message. -->
+  <!-- <node pkg="sss_data_generator" type="gen.py" name="sss_data_generator"/> -->
+    
+
+  <node pkg="sss_data_generator" type="__main__.py" name="data_receiver"/>
+
+  <include file="$(find sss_data_generator)/launch/tools.launch"/>
+</launch>
